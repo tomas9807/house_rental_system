@@ -1,0 +1,18 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+{% if not user.is_authenticated %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome,to my house rental system!</h1>
+    <p class="lead">Here you will find any house with any prince you can imagine</p>
+    <hr class="my-4">
+    <p>Log in or create an account to start purchasing my houses</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Log in</a>
+      <a class="btn btn-danger btn-lg" href="#" role="button">Create Account</a>
+    </p>
+  </div>
+{% endif %}
+
+
+{% endblock content %}
